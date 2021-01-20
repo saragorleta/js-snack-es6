@@ -66,6 +66,18 @@ const bici=[
   {nome:'mountanbike',peso: '30'},
   {nome:'graziellone',peso: '60'}
 ];
+const[bicicletta1, bicicletta2, bicicletta3, bicicletta4]= bici;
+console.log(bicletta3.nome);
+console.log(bicicletta3.cognome);
+// destrutturiamo
+const {nome, peso}=bici; // cosi leggo tutti gli elementi all'interno dell'oggetto bici
+console.log(nome, bici);
+
+bici.forEach(element)=>{
+  console.log(
+    ${element.nome}${element.peso} //anche in quest caso vado a leggere tutti gli elementi all'interno di oggetto bici
+  );
+}
 
 const biciclette = bici.filter((element) => {
   if ()
