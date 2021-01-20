@@ -18,34 +18,26 @@
 //   console.log(numero + 1);
 //   }
 // };
-//
+// //
 // 2)
 // const numeri=[5, 10, 20,43,23];
-//   if (numeri[] %2==0){
-//     document.getElementById('verde').innerHTML=numeri ' '+'sono pari';
+//
+// for (let i=0; i<numeri.length;i++){
+//
+//   if (numeri[i] %2==0){
+//     document.getElementById('verde').innerHTML +=
+//     ${numeri[i]};
 //   }
 //   else{
-//     document.getElementById('rosso').innerHTML=numeri ' '+'sono dispari';
-//   };
-//
-//
-//   let string = 'Qui';
-//   let stringTwo = 'Qua';
-//   let rosso = 'red';
-//   let verde= 'green';
-//   document.getElementById('testo').innerHTML = `
-//     <ul>
-//       <li class="${colore}">
-//         ${string} Quo ${stringTwo}
-//         Andarono
-//         al mercato
-//       </li>
-//     </ul>
-//   `;
+//     document.getElementById('rosso').innerHTML+=
+//     ${numeri[i]};
+//   }
+// };
+
 // 3)
-//
+
 // let parola1=prompt('inserisci una parola');
-// let parola2=prompt('inserisci un altra parola');
+// let parola2=prompt('inserisci un'altra parola');
 //   if(parola1.lenght==parola2.lenght){
 //     console.log(parola1, parola2);
 //   }else if(
@@ -56,7 +48,7 @@
 //     }
 //   }
 
-******jsnack 1
+//******jsnack 1
 // Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal.
 
@@ -66,6 +58,7 @@ const bici=[
   {nome:'mountanbike',peso: '30'},
   {nome:'graziellone',peso: '60'}
 ];
+// per stampare la bici con peso minore
 const[bicicletta1, bicicletta2, bicicletta3, bicicletta4]= bici;
 console.log(bicletta3.nome);
 console.log(bicicletta3.cognome);
@@ -84,11 +77,6 @@ const biciclette = bici.filter((element) => {
 return element
 });
 console.log();
-
-
-
-
-
 
 
 
