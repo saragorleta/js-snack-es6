@@ -58,33 +58,38 @@ const bici=[
   {nome:'mountanbike',peso: '30'},
   {nome:'graziellone',peso: '60'}
 ];
+
 // per stampare la bici con peso minore
-const[bicicletta1, bicicletta2, bicicletta3, bicicletta4]= bici;
-console.log(bicletta3.nome);
-console.log(bicicletta3.cognome);
-// destrutturiamo
-const {nome, peso}=bici; // cosi leggo tutti gli elementi all'interno dell'oggetto bici
-console.log(nome, bici);
-
-bici.forEach(element)=>{
-  console.log(
-    ${element.nome}${element.peso} //anche in quest caso vado a leggere tutti gli elementi all'interno di oggetto bici
-  );
-}
-
-const biciclette = bici.filter((element) => {
-  if ()
-return element
+let pesoMaggiore=bici[0];
+bici.forEach((element) => {
+  if (pesoMaggiore.peso > element.peso){
+    pesoMaggiore=element;
+  }
 });
-console.log();
+console.log(pesoMaggiore);
 
-
-
-
-******jsnack 2
-
-// Partendo da un array creiamone uno nuovo con solo i valori che hanno la posizione compresa tra i due numeri inseriti dall'utente
+// ******jsnack 2
+//
+// Partendo da un array creiamone uno nuovo con solo i valori che hanno la posizione
+// compresa tra i due numeri inseriti dall'utente
 // Usiamo i nuovi metodi degli array foreach o filter
 // Esempio:
 // const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
 // Se l’utente inserisce 2 numeri: 1,4 allora selezioniamo 'Pluto', 'Paperino', 'Paperone', 'Paperina'
+//
+
+const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
+const primoNumero=prompt('inserisci un numero');
+const secondoNumero=prompt('inserisci un numero');
+
+// const numeriInseriti = myArray.filter((element, index) => index>=primoNumero && index<=secondoNumero );
+// console.log(numeriInseriti );
+
+const arrayVuoto=[];
+myArray.forEach((element, index) => {
+  // console.log(element, index);
+  if(index>=primoNumero && index<=secondoNumero ){
+    arrayVuoto.push(element);
+  }
+});
+console.log(arrayVuoto);
